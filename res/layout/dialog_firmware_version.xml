@@ -43,6 +43,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/security_patch"/>
+      
         <TextView
             style="@style/device_info_dialog_value"
             android:id="@+id/security_patch_level_value"
@@ -75,12 +76,23 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
-        <TextView
-            style="@style/device_info_dialog_label"
-            android:id="@+id/build_number_label"
+        <ImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/build_number"/>
+            android:layout_marginLeft="36dp"
+            android:layout_marginRight="36dp"
+            android:paddingBottom="16dp"
+            android:gravity="center"
+            android:src="@drawable/aosep_logo"
+            android:tint="?android:attr/colorAccent"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:selectable="false" />
+      
+      
+      
+      
+      
         <TextView
             style="@style/device_info_dialog_value"
             android:id="@+id/build_number_value"
